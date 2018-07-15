@@ -8,9 +8,11 @@ import (
 
 func init() {
 	nf, err := os.Create("log.txt")
+
 	if err != nil {
 		fmt.Println(err)
 	}
+
 	log.SetOutput(nf)
 }
 
