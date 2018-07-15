@@ -1,0 +1,16 @@
+#We are using gorilla mux
+-- Use go get github.com/gorilla/mux
+
+#Implement a Restful API for the TODO App
+
+Rest methods are expected to be under /api/todos
+
+The API supports:
+-- GET (/api/todos) for getting a list of TODO
+	* Returns a list of []TODOS{id int, description string, done boolean, createdAt timestamp}
+-- POST (/api/todos) for posting a new TODO
+	* Expects {description string}
+-- DELETE (/api/todos/:id) for deleting a new TODO
+
+
+
